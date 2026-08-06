@@ -16,16 +16,5 @@ This project predicts future sales trends using historical data from the Superst
 - Model Evaluation
 - Prediction Visualization
 
-## Project Structure
-
-```
-Predictive-Analytics-Project/
-│── prediction.py
-│── Superstore.csv
-│── requirements.txt
-│── README.md
-└── images/
-```
-
 ## Author
 **Suneet Reddy**
