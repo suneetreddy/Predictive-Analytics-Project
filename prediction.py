@@ -59,3 +59,13 @@ predictions = model.predict(X_test)
 
 print("MAE:", mean_absolute_error(y_test, predictions))
 print("R2 Score:", r2_score(y_test, predictions))
+
+plt.figure(figsize=(8,5))
+plt.scatter(X_test, y_test, label="Actual")
+plt.scatter(X_test, predictions, label="Predicted")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+plt.legend()
+plt.tight_layout()
+plt.savefig("images/prediction.png")
+plt.show()
