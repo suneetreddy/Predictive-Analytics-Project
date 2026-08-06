@@ -52,3 +52,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 model = LinearRegression()
 model.fit(X_train, y_train)
+
+from sklearn.metrics import mean_absolute_error, r2_score
+
+predictions = model.predict(X_test)
+
+print("MAE:", mean_absolute_error(y_test, predictions))
+print("R2 Score:", r2_score(y_test, predictions))
